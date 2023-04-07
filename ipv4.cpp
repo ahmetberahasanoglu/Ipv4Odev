@@ -8,7 +8,7 @@ int main()
     scanf("%s", ipAdresi);//adresi kullanıcıdan aldık
 
     printf("Degistirilmis IP adresi: ", ipAdresi);
-    
+    // i sayısını dizilerin genel özelliğine göre 0'dan baslattım
     for(int i = 0; i < strlen(ipAdresi); i++)//ip adresinin içerdiği sayı kadar donecek ve . olan yerlere (.) yazarak ip'yi etkisiz hale getirecek.
     {
         if(ipAdresi[i] == '.')
