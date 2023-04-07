@@ -2,8 +2,9 @@
 #include <string.h>
 
 int main()
-{
-    char ipAdresi[16]; //ip adresi max 16 hab
+{   
+    /*programın amacı Geçerli bir (IPv4) IP adresi verildiğinde, bu IP adresindeki her "." noktasını "(.)" ile değiştirmektir. */
+    char ipAdresi[16]; //ip adresinin max hanesine göre dizi sayısını belirledik.
     printf("IPv4 adresini girin: ");
     scanf("%s", ipAdresi);//adresi kullanıcıdan aldık
 
