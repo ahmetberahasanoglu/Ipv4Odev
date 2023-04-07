@@ -8,7 +8,7 @@ int main()
     printf("IPv4 adresini girin: ");
     scanf("%s", ipAdresi);//adresi kullanıcıdan aldık
 
-    printf("Degistirilmis IP adresi: ", ipAdresi);
+    printf("Degistirilmis IP adresi: ", ipAdresi);//degistirilmis ip adresi alttaki for dongusunden çıkanlar sonucunda bu ifadenin yanına yazılacak.
     // i sayısını dizilerin genel özelliğine göre 0'dan baslattım
     for(int i = 0; i < strlen(ipAdresi); i++)//for döngüsü ip adresinin içerdiği sayı kadar donecek
     {
