@@ -9,7 +9,7 @@ int main()
 
     printf("Degistirilmis IP adresi: ", ipAdresi);
     // i sayısını dizilerin genel özelliğine göre 0'dan baslattım
-    for(int i = 0; i < strlen(ipAdresi); i++)//ip adresinin içerdiği sayı kadar donecek ve . olan yerlere (.) yazarak ip'yi etkisiz hale getirecek.
+    for(int i = 0; i < strlen(ipAdresi); i++)//for döngüsü ip adresinin içerdiği sayı kadar donecek ve . olan yerlere (.) yazarak ip'yi değiştirecek.
     {
         if(ipAdresi[i] == '.')
         {
@@ -19,6 +19,7 @@ int main()
          printf("%c", ipAdresi[i]);
         }
     }
+    // bunun sonucunda örneğin 192.168.1.1 Degistirilmis IP adresi: 192(.)168(.)1(.)1 diye dönecektir.
 
 
 
