@@ -10,14 +10,14 @@ int main()
 
     printf("Degistirilmis IP adresi: ", ipAdresi);
     // i sayısını dizilerin genel özelliğine göre 0'dan baslattım
-    for(int i = 0; i < strlen(ipAdresi); i++)//for döngüsü ip adresinin içerdiği sayı kadar donecek ve . olan yerlere (.) yazarak ip'yi değiştirecek.
+    for(int i = 0; i < strlen(ipAdresi); i++)//for döngüsü ip adresinin içerdiği sayı kadar donecek
     {
-        if(ipAdresi[i] == '.')
+        if(ipAdresi[i] == '.')// bu döngü ile "." olan yerlere "(.)" yazarak ip'yi değiştirecek.
         {
            printf("(.)"); 
         }
         else{
-         printf("%c", ipAdresi[i]);
+         printf("%c", ipAdresi[i]);//eger nokta yoksa da adresi oldugu gibi yazacak
         }
     }
     // bunun sonucunda örneğin 192.168.1.1 Degistirilmis IP adresi: 192(.)168(.)1(.)1 diye dönecektir.
